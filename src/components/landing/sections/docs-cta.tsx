@@ -5,7 +5,7 @@ export function DocsCta() {
   return (
     <section
       id="docs"
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="docs-title"
     >
       <div className="relative overflow-hidden rounded-2xl border border-hairline bg-surface/70 p-10 backdrop-blur sm:p-16">
@@ -22,7 +22,7 @@ export function DocsCta() {
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
               ship it
             </p>
-            <SplitHeading as="h2" id="docs-title" className="text-4xl font-semibold sm:text-5xl">
+            <SplitHeading as="h2" id="docs-title"            className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
               Plug in. Prove everything.
             </SplitHeading>
             <p className="mt-4 max-w-lg text-muted-foreground">
