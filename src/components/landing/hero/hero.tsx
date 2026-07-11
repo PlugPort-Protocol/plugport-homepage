@@ -145,7 +145,7 @@ export function Hero() {
 
         {/* Foreground content */}
         <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center px-6 text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground backdrop-blur">
+          <div className="mb-6 short:mb-3 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground backdrop-blur">
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-verified opacity-75" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-verified" />
@@ -162,7 +162,7 @@ export function Hero() {
 
           <p
             ref={subRef}
-            className="mt-7 max-w-2xl text-balance text-base text-muted-foreground sm:text-lg"
+            className="mt-7 short:mt-4 max-w-2xl text-balance text-base text-muted-foreground sm:text-lg"
           >
             PlugPort speaks MongoDB, SQL and Redis natively — then anchors every
             write with Merkle-proof integrity on MonadDb. Familiar drivers,
@@ -171,7 +171,7 @@ export function Hero() {
 
           <div
             ref={ctaRef}
-            className="mt-9 flex flex-wrap items-center justify-center gap-3"
+            className="mt-9 short:mt-4 flex flex-wrap items-center justify-center gap-3 short:gap-2"
           >
             <MagneticButton href="#docs" variant="primary">
               <span className="inline-flex items-center gap-2">
@@ -192,7 +192,7 @@ export function Hero() {
             </MagneticButton>
           </div>
 
-          <div className="mt-14 flex items-center gap-6 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground/70">
+          <div className="mt-14 short:mt-6 flex items-center gap-6 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground/70">
             <ProtoDot color="var(--color-mongo)" label="mongo" />
             <span className="opacity-30">·</span>
             <ProtoDot color="var(--color-sql)" label="sql" />
@@ -204,7 +204,7 @@ export function Hero() {
         {/* Beat timeline (scroll story) */}
         <div
           ref={beatsRef}
-          className="pointer-events-none absolute inset-x-0 bottom-8 z-10 mx-auto hidden max-w-6xl px-6 md:block"
+          className="pointer-events-none absolute inset-x-0 bottom-8 short:bottom-4 z-10 mx-auto hidden max-w-6xl px-6 md:block"
           aria-hidden="true"
         >
           <div className="flex items-end justify-between border-t border-hairline pt-4">
