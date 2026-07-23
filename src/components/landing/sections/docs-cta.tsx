@@ -31,7 +31,7 @@ export function DocsCta() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <MagneticButton href="#docs" variant="primary">
+            <MagneticButton href="https://wiki.plugport.wtf/" variant="primary">
               Read the docs
             </MagneticButton>
             <MagneticButton href="#" variant="secondary">

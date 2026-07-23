@@ -15,9 +15,33 @@ export function Footer() {
             <ProtoDot color="var(--color-redis)" label="redis" />
           </div>
         </div>
-        <FooterCol title="Product" links={["Features", "Architecture", "Verification", "Pricing"]} />
-        <FooterCol title="Developers" links={["Docs", "SDKs", "CLI", "Changelog"]} />
-        <FooterCol title="Company" links={["Blog", "Community", "Security", "Contact"]} />
+        <FooterCol
+          title="Product"
+          links={[
+            { label: "Features", href: "#solution" },
+            { label: "Architecture", href: "#architecture" },
+            { label: "Verification", href: "#verification" },
+            { label: "Pricing", href: "#" },
+          ]}
+        />
+        <FooterCol
+          title="Developers"
+          links={[
+            { label: "Docs", href: "https://wiki.plugport.wtf/" },
+            { label: "SDKs", href: "#" },
+            { label: "CLI", href: "#" },
+            { label: "Changelog", href: "#" },
+          ]}
+        />
+        <FooterCol
+          title="Company"
+          links={[
+            { label: "Blog", href: "#" },
+            { label: "Community", href: "#" },
+            { label: "Security", href: "#" },
+            { label: "Contact", href: "#" },
+          ]}
+        />
       </div>
       <div className="border-t border-hairline">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-6 py-6 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:flex-row sm:items-center">
@@ -32,7 +56,13 @@ export function Footer() {
   );
 }
 
-function FooterCol({ title, links }: { title: string; links: string[] }) {
+function FooterCol({
+  title,
+  links,
+}: {
+  title: string;
+  links: { label: string; href: string }[];
+}) {
   return (
     <div>
       <h3 className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
@@ -40,9 +70,12 @@ function FooterCol({ title, links }: { title: string; links: string[] }) {
       </h3>
       <ul className="mt-4 space-y-2 text-sm">
         {links.map((l) => (
-          <li key={l}>
-            <a href="#" className="text-foreground/80 transition-colors hover:text-foreground">
-              {l}
+          <li key={l.label}>
+            <a
+              href={l.href}
+              className="text-foreground/80 transition-colors hover:text-foreground"
+            >
+              {l.label}
             </a>
           </li>
         ))}
