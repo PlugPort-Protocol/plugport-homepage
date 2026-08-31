@@ -37,7 +37,7 @@ export function ProtocolChaos() {
   return (
     <section
       id="problem"
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="problem-title"
     >
       <div className="mx-auto max-w-3xl text-center">
@@ -47,7 +47,7 @@ export function ProtocolChaos() {
         <SplitHeading
           as="h2"
           id="problem-title"
-          className="text-4xl font-semibold text-foreground sm:text-6xl"
+          className="text-3xl font-semibold text-foreground sm:text-4xl lg:text-6xl"
         >
           Three worlds. Three drivers. Zero proof.
         </SplitHeading>

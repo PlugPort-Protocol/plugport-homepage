@@ -50,11 +50,10 @@ export function VerificationEngine() {
     <section
       id="verification"
       ref={wrapRef}
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="verify-title"
     >
-      <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
-        <div className="relative aspect-square w-full max-w-[520px]">
+      <div className="grid gap-16 lg:grid-cols-2 lg:items-center">          <div className="relative aspect-square w-full max-w-[400px] sm:max-w-[520px] lg:max-w-full">
           <svg
             ref={treeRef}
             viewBox="0 0 500 500"
@@ -114,7 +113,7 @@ export function VerificationEngine() {
           <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em]" style={{ color: "var(--color-verified)" }}>
             verification engine
           </p>
-          <SplitHeading as="h2" id="verify-title" className="text-4xl font-semibold sm:text-5xl">
+          <SplitHeading as="h2" id="verify-title"            className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
             Every write becomes a proof.
           </SplitHeading>
           <p className="mt-5 max-w-md text-muted-foreground">

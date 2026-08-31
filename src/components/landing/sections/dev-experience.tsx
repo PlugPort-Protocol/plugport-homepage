@@ -18,14 +18,14 @@ export function DevExperience() {
   return (
     <section
       id="dx"
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="dx-title"
     >
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
           developer experience
         </p>
-        <SplitHeading as="h2" id="dx-title" className="text-4xl font-semibold sm:text-5xl">
+        <SplitHeading as="h2" id="dx-title"          className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
           From zero to verifiable in four commands.
         </SplitHeading>
       </div>

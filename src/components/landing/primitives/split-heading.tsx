@@ -72,7 +72,7 @@ export function SplitHeading({
     <Tag
       ref={ref}
       id={id}
-      className={`overflow-hidden text-balance leading-[1.02] tracking-[-0.02em] ${className}`}
+      className={`overflow-hidden text-balance leading-[1.04] sm:leading-[1.02] tracking-[-0.02em] ${className}`}
     >
       {children}
     </Tag>

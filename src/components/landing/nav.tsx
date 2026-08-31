@@ -5,7 +5,7 @@ const NAV = [
   { label: "Product", href: "#solution" },
   { label: "Architecture", href: "#architecture" },
   { label: "Developers", href: "#dx" },
-  { label: "Docs", href: "#docs" },
+  { label: "Docs", href: "https://wiki.plugport.wtf/" },
 ];
 
 export function Nav() {
@@ -49,12 +49,12 @@ export function Nav() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://app.plugport.wtf"
+            href="https://console.plugport.wtf/"
             className="hidden rounded-md px-3 py-1.5 text-[13px] text-muted-foreground transition-colors hover:text-foreground sm:inline-block"
           >
             Console
           </a>
-          <MagneticButton href="https://wiki.plugport.wtf" variant="primary" className="!py-2 !text-[13px]">
+          <MagneticButton href="https://wiki.plugport.wtf/" variant="primary" className="!py-2 !text-[13px]">
             Start building
           </MagneticButton>
         </div>

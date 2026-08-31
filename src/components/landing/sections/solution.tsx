@@ -4,7 +4,7 @@ export function Solution() {
   return (
     <section
       id="solution"
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="solution-title"
     >
       <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -15,7 +15,7 @@ export function Solution() {
           <SplitHeading
             as="h2"
             id="solution-title"
-            className="text-4xl font-semibold sm:text-5xl"
+            className="text-3xl font-semibold sm:text-4xl lg:text-5xl"
           >
             One port. One proof. Every protocol.
           </SplitHeading>

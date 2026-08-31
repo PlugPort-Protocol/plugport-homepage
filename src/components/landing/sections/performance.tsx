@@ -18,7 +18,7 @@ export function Performance() {
   return (
     <section
       id="performance"
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="perf-title"
     >
       <div className="grid gap-16 lg:grid-cols-[1fr_1.4fr] lg:items-end">
@@ -26,7 +26,7 @@ export function Performance() {
           <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
             performance
           </p>
-          <SplitHeading as="h2" id="perf-title" className="text-4xl font-semibold sm:text-5xl">
+          <SplitHeading as="h2" id="perf-title"          className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
             Cryptographic trust, without the tax.
           </SplitHeading>
           <p className="mt-5 max-w-md text-muted-foreground">
@@ -41,7 +41,7 @@ export function Performance() {
               <dd className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                 {m.label}
               </dd>
-              <dt className="mt-6 text-4xl font-semibold tracking-[-0.03em] tabular-nums sm:text-5xl">
+              <dt className="mt-6 text-3xl font-semibold tracking-[-0.03em] tabular-nums sm:text-4xl lg:text-5xl">
                 {m.format === "compact" ? (
                   <FormattedCounter to={m.to} suffix={m.suffix ?? ""} />
                 ) : (

@@ -31,14 +31,14 @@ export function Architecture() {
   return (
     <section
       id="architecture"
-      className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-40"
       aria-labelledby="arch-title"
     >
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
           architecture
         </p>
-        <SplitHeading as="h2" id="arch-title" className="text-4xl font-semibold sm:text-5xl">
+        <SplitHeading as="h2" id="arch-title"          className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
           Engineered top to bottom.
         </SplitHeading>
         <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
